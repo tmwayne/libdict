@@ -1,0 +1,1 @@
+SUBDIRS = libdict src test
