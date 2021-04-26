@@ -25,7 +25,10 @@ AC_CHECK_HEADERS([stdio.h stddef.h, string.h])
 # Checks for typedefs, structures, and compiler characteristics.
 
 # Checks for library functions.
-AC_SEARCH_LIBS([dlopen])
+AC_SEARCH_LIBS([dlopen], [dl])
+AC_SEARCH_LIBS([Mem_alloc], [mem])
+AC_SEARCH_LIBS([Except_raise], [error])
+AC_SEARCH_LIBS([strmatch], [cstrings])
 
 AC_CONFIG_FILES([
   Makefile

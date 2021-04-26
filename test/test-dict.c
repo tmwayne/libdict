@@ -7,10 +7,10 @@
 //
 
 #include <stdio.h> // printf
+
+#include <error.h> // TRY, EXCEPT, END_TRY, Assert_Failed
 #include "minunit.h"
 #include "dict.h"
-#include "except.h" // TRY, EXCEPT, END_TRY
-#include "assert.h" // Assert_Failed
 
 int tests_run = 0;
 

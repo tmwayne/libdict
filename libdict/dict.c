@@ -8,11 +8,11 @@
 
 #include <stdio.h> // printf
 #include <string.h> // strdup
+
+#include <c-strings.h> // strmatch
+#include <mem.h> // NEW, FREE
+#include <error.h> // assert, RAISE
 #include "dict.h"
-#include "mem.h" // NEW, FREE
-#include "assert.h" // assert
-#include "except.h" // RAISE
-#include "c-strings.h" // strmatch
 
 #define D dict_T
 
